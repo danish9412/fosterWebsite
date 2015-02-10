@@ -322,8 +322,8 @@ body > section {
   height: 100%;
 }
 #main-slider {
-  position: relative;
-  
+  position: inherit;
+  line-height: 300px
 }
 #main-slider .carousel h2 {
   font-size: 36px;
@@ -352,11 +352,11 @@ body > section {
   position: absolute;
   width: 100%;
   display: block !important;
-  height: 600px;
-  -webkit-transition: opacity ease-in-out 500ms;
-  -moz-transition: opacity ease-in-out 500ms;
-  -o-transition: opacity ease-in-out 500ms;
-  transition: opacity ease-in-out 500ms;
+  height: 350px;
+  -webkit-transition: opacity ease-in-out 200ms;
+  -moz-transition: opacity ease-in-out 200ms;
+  -o-transition: opacity ease-in-out 200ms;
+  transition: opacity ease-in-out 200ms;
 }
 #main-slider .carousel .item:first-child {
   top: auto;
@@ -364,10 +364,10 @@ body > section {
 }
 #main-slider .carousel .item.active {
   opacity: 1;
-  -webkit-transition: opacity ease-in-out 500ms;
-  -moz-transition: opacity ease-in-out 500ms;
-  -o-transition: opacity ease-in-out 500ms;
-  transition: opacity ease-in-out 500ms;
+  -webkit-transition: opacity ease-in-out 200ms;
+  -moz-transition: opacity ease-in-out 200ms;
+  -o-transition: opacity ease-in-out 200ms;
+  transition: opacity ease-in-out 200ms;
   z-index: 1;
 }
 #main-slider .prev,
