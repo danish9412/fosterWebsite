@@ -1090,3 +1090,17 @@ ul.faq li > div h3 {
   margin-top: 150px;
   margin-bottom: 150px;
 }
+
+#tablenext{
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+}
+#tablenext td{
+  border: 1px solid black;
+  text-align: center;
+  line-height: 33px;
+}
+#tablenext tr:nth-child(odd) {
+   background-color:#eee;
+}

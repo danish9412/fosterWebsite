@@ -20,6 +20,15 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+     
+      ga('create', 'UA-51830010-1', 'fostertraining.in');
+      ga('send', 'pageview');
+    </script>
 </head><!--/head-->
 <body>
         <header class="navbar navbar-inverse navbar-fixed-top wet-asphalt" role="banner">
@@ -40,12 +49,13 @@
                     <li><a href="methodology.html">Methodology</a></li>
                     
                     <li><a href="gallery.html">Photo Gallery</a></li>
+                    <li><a href="directorsprofile.html">Director's Profile</a></li>
+                    <li><a href="nexttraining.html">Next Training Program</a></li>
                     
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Trainings <i class="icon-angle-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="directorsprofile.html">Director's Profile</a></li>
-                            <li class="divider"></li>
+                            
                             <li><a href="softskill.html">Soft Skill Training</a></li>
                             <li><a href="corporatetraining.html">Corporate Trainings</a></li>
                             <li><a href="institutionaltraining.html">Institutional Trainings</a></li>
@@ -65,9 +75,7 @@
                             <li><a href="pdf/Foster_Proposal_Letter_for_Collegs.rar">For Institutional Training <i class="icon-download-alt"></i></a></li>
                             <li><a href="pdf/Foster_Proposal_Letter_for_Corporates.rar">For Corporate Training <i class="icon-download-alt"></i></a></li>
                             <li><a href="pdf/Proposal_Letter_for_Schools_on_LH.rar">For school <i class="icon-download-alt"></i></a></li>
-                            <li class="divider"></li>
-                            <li class="divider"></li>
-                            <li><a href="nexttraining.html">Next Training Program</a></li>
+                            
                             
                         </ul>
                     </li>
@@ -98,27 +106,17 @@
             <div class="col-sm-8">
                 <h4>Contact/Query Form</h4>
                 <div class="status alert alert-success" style="display: none"></div>
-                <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php" role="form">
-                    <div class="row">
-                        <div class="col-sm-5">
-                            <div class="form-group">
-                                <input name="name" type="text" class="form-control" required="required" placeholder="Name">
-                            </div>
-                            <div class="form-group">
-                                <input name="email" type="email" class="form-control" required="required" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <input name="number" type="tel" class="form-control" maxlength="10" minlength="10" required="required" placeholder="Mobile Number">
-                            </div>
-                            <br>
-                           <div class="form-group">
-                                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-                            </div>
-                        </div>
-                        <div class="col-sm-7">
-                            
-                            <div class="form-group">
-                                <select name="subject" class="form-control" >
+
+                <form  method="post" action="sendemail.php">
+
+                    <input name="nameofperson" type="text"  placeholder="Name" required><br>                    
+                    <input name="emailofperson" type="email"  placeholder="Email" required><br>
+                    <input name="numberofperson" type="tel"  placeholder="Mobile Number" required><br></div>
+         
+                    <input name="orgofperson" type="text"  placeholder="Organisation" required><br>
+                    <input name="locofperson" type="text"   placeholder="Location"><br>
+                    <select name="subjectofperson" class="form-control" required >
+
                                           <option value="Regarding Training for staff">Regarding Training for staff</option>
                                           <option value="Regarding leadership training for managers">Regarding leadership training for managers</option>
                                           <option value="Regarding behaviour and attitudinal correction training for corporates">Regarding behaviour and attitudinal correction training for corporates</option>
@@ -128,16 +126,20 @@
                                           <option value="Next open house training program">Next open house training program</option>
                                           <option value="Regarding school training program">Regarding school training program</option>
                                           <option value="Other">Other</option>
-                                </select>        
-                            </div>
-                            <textarea name="message" id="message" required="required" class="form-control" rows="3" placeholder="Message"></textarea>
-                        </div>
-                    </div>
-                </form>
+                    </select><br>
+          
+              
+                    <input name="messageofperson" rows="3" type="text" placeholder="Message" required>
+                <br>
+
+                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                              
+                </form> 
+
             </div><!--/.col-sm-8-->
             <div class="col-sm-4">
                 <h4>Our Location</h4>
-                <iframe width="100%" height="215" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/d/embed?mid=zomzm28I94co.k0Kam_TfFMwg"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1750.8262376172588!2d77.29436500000001!3d28.64017600000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb50efd37fef%3A0x4ef64be4f470210d!2sFoster+Training+Services!5e0!3m2!1sen!2sin!4v1423668888159" width="400" height="215" frameborder="0" style="border:0"></iframe>
             </div><!--/.col-sm-4-->
         </div>
     </section><!--/#contact-page-->
